@@ -9,6 +9,13 @@ BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo 
+
+echo "-------------> Build Dir"
+echo BUILD_DIR
+echo "-------------> Cache Dir"
+echo CACHE_DIR
+
 # source in common functions
 . $BIN_DIR/common.sh
 
