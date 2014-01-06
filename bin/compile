@@ -215,7 +215,7 @@ echo 'export PATH="/app/.jdk/bin:$PATH"' >> $PROFILE_PATH
 logger -p user.notice -t "slugc[$$]" "language_pack_java java_compile_start"
 
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
-. $BIN_DIR/mavencommon # common functions
+. $BIN_DIR/mavencommon.sh # common functions
 
 # parse args
 BUILD_DIR=$BUILD_DIR/scheduler
