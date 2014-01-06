@@ -12,9 +12,9 @@ CACHE_DIR=$2
 echo 
 
 echo "-------------> Build Dir"
-echo BUILD_DIR
+echo $BUILD_DIR
 echo "-------------> Cache Dir"
-echo CACHE_DIR
+echo $CACHE_DIR
 
 # source in common functions
 . $BIN_DIR/common.sh
