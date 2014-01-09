@@ -154,11 +154,13 @@ check_build_status
 
 if [ ! -d server ] ; then
 
+	echo "Server directoy not found. Creating a new one."
     mkdir server
 
     if [ "jetty" == "$(get_property ${BUILD_DIR}/system.properties grails.application.container)" ] ; then
       SERVLET_VERSION=$(get_property $BUILD_DIR/grails-app/conf/BuildConfig.groovy 'grails.servlet.version')
 
+	  echo "Found Jetty in the system.properties...."
       if [ "$SERVLET_VERSION" == '3.0' ]; then
         JETTY_RUNNER_VERSION=8.1.10.v20130312
       else
