@@ -157,7 +157,7 @@ if [ ! -d server ] ; then
 	echo "Server directoy not found. Creating a new one."
     mkdir server
 
-        WEBAPP_RUNNER_VERSION=7.0.22.1
+        WEBAPP_RUNNER_VERSION=7.0.40.0
 	echo "-----> No server directory found. Adding webapp-runner $WEBAPP_RUNNER_VERSION automatically."
         DEFAULT_RUNNER_JAR=server/webapp-runner.jar
         #curl -fs http://s3pository.heroku.com/maven-central/com/github/jsimone/webapp-runner/$WEBAPP_RUNNER_VERSION/webapp-runner-$WEBAPP_RUNNER_VERSION.jar > $DEFAULT_RUNNER_JAR
